@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reeman TTS System"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Status Display -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Not Initialized"
+            android:textSize="18sp"
+            android:textColor="#FF6B6B"
+            android:padding="12dp"
+            android:background="#F0F0F0"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Control Buttons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TTS Controls"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnInitTts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Initialize TTS"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnTestThai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Thai Speech (Auto)"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Text Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Text Input"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etTestText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Thai text here..."
+            android:minLines="3"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:background="#F0F0F0"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Speak"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stop"
+                android:backgroundTint="#FF6B6B"/>
+        </LinearLayout>
+
+        <!-- Log Display -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity Log"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No logs yet..."
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:padding="12dp"
+            android:background="#F0F0F0"
+            android:minHeight="200dp"/>
+
+        <!-- Configuration Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuration"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speech Rate: 0.9\nPitch: 1.0\nLocale: th-TH\nDevice ID: ROBOT_001"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:padding="12dp"
+            android:background="#F0F0F0"/>
+
+    </LinearLayout>
+</ScrollView>

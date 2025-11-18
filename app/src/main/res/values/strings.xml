@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reeman TTS</string>
+    <string name="service_name">Reeman TTS Service</string>
+    <string name="notification_title">Reeman TTS Service Running</string>
+    <string name="notification_message">Listening for messages from factory system</string>
+</resources>
